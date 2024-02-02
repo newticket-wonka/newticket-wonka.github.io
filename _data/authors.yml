@@ -6,6 +6,10 @@
 #   url: {homepage_of_author}
 # -------------------------------------
 
+newticket-wonka:
+  name: newticket-wonka
+  url: https://github.com/newticket-wonka/
+
 cotes:
   name: Cotes Chung
   twitter: cotes2020
