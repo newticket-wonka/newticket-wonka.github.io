@@ -10,11 +10,10 @@ layout: page
 {% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
 {% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
 
-<!-- Get 'til' category posts-->
-{% assign tils = site.posts | where_exp: 'post', "post.categories[0] == 'TIL'" %}
+<!-- Get TIL category posts-->
 
 <div id="archives" class="pl-xl-3">
-  {% for post in tils %}
+  {% for post in site.categories.TIL %}
     {% assign cur_year = post.date | date: '%Y' %}
 
     {% if cur_year != last_year %}
