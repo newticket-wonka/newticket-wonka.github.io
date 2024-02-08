@@ -2,7 +2,6 @@
 title: "마크다운 문법: 이미지와 스타일"
 description: "이미지 작성을 위한 마크다운 문법과 이미지 스타일 문법이 없는 이유를 알아봅시다! 마크다운 확장 중에는 이미지 스타일을 다루는 버전이 있을까요?"
 date: 2024-01-10 21:02:00 +0900
-last_modified_at: 2024-01-18 03:28:00 +0900
 author: newticket-wonka
 categories: [Language, Markdown]
 tags:

@@ -3,7 +3,6 @@ layout: post
 title: "NumPy.reshape에서 -1은 뭘까?"
 description: "Python NumPy의 reshape 함수를 어떻게 사용하고, 입력으로 주어지는 -1이 어떻게 쓰이는지 알아봅시다!"
 date: 2021-08-01 19:11:00 +0900
-last_modified_at: 2023-09-09 23:32:00 +0900
 author: newticket-wonka
 categories: [Language, Python]
 tags: [numpy, curiosity]

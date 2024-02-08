@@ -4,7 +4,6 @@ author: newticket-wonka
 title: "필요에 의한 발전 - 초기 컴퓨터"
 description: "왜 항상 어떤 것을 배울 때는 그것의 역사부터 배우는 걸까요? 그리고 우리는 왜 재미없다고 느낄까요? 어쩌면 지금 우리에게 필요하지 않은 상황이기 때문일지도 몰라요."
 date: 2024-01-31 00:03:00 +0900
-last_modified_at: 2024-02-02 02:58:00 +0900
 categories: [CS]
 tags: [
     history,

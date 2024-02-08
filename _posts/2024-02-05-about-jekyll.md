@@ -4,7 +4,6 @@ author: newticket-wonka
 title: "Jekyll에 대해서"
 description: "Jekyll이 왜 만들어졌는지, 어떻게 쓰는건지 알아봅시다."
 date: 2024-02-05 13:28:00 +0900
-last_modified_at: 2024-02-06 23:42:00 +0900
 categories: [DEV, Jekyll]
 tags: [
     blog,

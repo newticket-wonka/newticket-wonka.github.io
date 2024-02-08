@@ -3,7 +3,6 @@ layout: post
 title: "마크다운 문법: 내부 링크와 특수문자"
 description: "마크다운 문서 내부 링크가 동작하지 않으면 특수문자가 문제일 수 있습니다. 특수문자 제거, 미리보기, custom id로 해결해봅시다!"
 date: 2021-08-05 14:06:00 +0900
-last_modified_at: 2023-09-09 23:25:00 +0900
 author: newticket-wonka
 categories: [Language, Markdown]
 tags: [link, curiosity]
