@@ -8,7 +8,7 @@ categories: [DEV, Visual Studio Code]
 tags: [ide, format]
 ---
 > Jekyll 블로그 테마인 Chirpy에는 코드 블럭을 작성할 때 해당 파일 이름을 붙일 수 있는 [기능](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_posts/2019-08-08-text-and-typography.md?plain=1#L124)이 있습니다.
-> 
+>
 > ![파일를 저장하기 전 코드는 한 줄 씩 써있다.](/assets/img/24-02-18/before_save_markdown.png '저장 전에는 코드 블럭과 IAL 부분이 붙어있다.')
 > *저장하기 전*
 >
