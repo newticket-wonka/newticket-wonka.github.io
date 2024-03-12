@@ -1,10 +1,10 @@
 ---
-title: "Backend"
+title: "Java - String to int"
 date: 2024-03-11 23:15:00 +0900
 author: newticket-wonka
 categories: [Lauguage, Java]
 hidden: true
-tags: [backend]
+tags: [java]
 ---
 
 [_Java™ Platform Standard Ed. 8_](https://docs.oracle.com/javase/8/docs/api/)
