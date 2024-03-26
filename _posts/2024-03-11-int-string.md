@@ -89,4 +89,15 @@ System.out.println(num2); // 17
 
 참조 자료형(Reference Type)인 `Integer`객체로 반환
 
+#### Auto Unboxing & Auto Boxing
+
 `int num2 = Integer.valueOf(str);`로 사용해도 괜찮다.
+
+이는 자동 언박싱이라 부르는데 JDK 1.5부터 자바 컴파일러가 자동으로 처리해주기 시작했다.
+
+```java
+Integer num = 17;
+int n = num;
+```
+
+그래도 내부적으로는 추가 연산 작업을 거치기에 동일한 타입 연산을 하도록 구현하는 편이 좋다.
