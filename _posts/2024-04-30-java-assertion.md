@@ -156,8 +156,13 @@ private Booking makeBooking(LocalDateTime startTime, LocalDateTime endTime) {
 
 ## assert 주의사항
 
-1. public 메서드의 인자에 `assert`를 사용하지 말 것
+1. `public` 메서드의 인자에 `assert`를 사용하지 말 것
 2. 프로그램 동작에 필수인 작업을 `assert`에 넣지 말 것
 
 큰 이유로는 두 경우 모두 `assert`가 비활성화 될 수 있기 때문이다.
 
+`public` 메서드의 인자 검사는 *항상* 해당 조건을 보장해야 하기 때문에 기본적으로 실행되지 않는 `assert`는 이에 적합하지 않다.
+
+같은 이유로 `assert`에 필수적인 작업을 하는 코드를 넣으면 실행되지 않을 수 있다.
+예시로 `assert names.remove(null);` 같은 코드는 `-ea` 옵션을 실행 시 주지 않는 이상 동작하지 않는다.
+따라서 `remove()`는 따로 실행하고 그 결과를 `assert`에서 확인하는 식으로 *검증*해야 한다.
