@@ -3,18 +3,13 @@ layout: page
 # The Archives of posts.
 ---
 
-<!-- Custom, shows posts except 'til' category posts -->
-
 {% include lang.html %}
 
 {% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
 {% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
 
-<!-- Get posts except 'til' category posts-->
-{% assign default = site.posts | where_exp: 'post', "post.categories[0] != 'TIL'" %}
-
 <div id="archives" class="pl-xl-3">
-  {% for post in default %}
+  {% for post in site.posts %}
     {% assign cur_year = post.date | date: '%Y' %}
 
     {% if cur_year != last_year %}
