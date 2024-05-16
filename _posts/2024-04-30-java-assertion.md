@@ -166,3 +166,36 @@ private Booking makeBooking(LocalDateTime startTime, LocalDateTime endTime) {
 같은 이유로 `assert`에 필수적인 작업을 하는 코드를 넣으면 실행되지 않을 수 있다.
 예시로 `assert names.remove(null);` 같은 코드는 `-ea` 옵션을 실행 시 주지 않는 이상 동작하지 않는다.
 따라서 `remove()`는 따로 실행하고 그 결과를 `assert`에서 확인하는 식으로 *검증*해야 한다.
+
+## assert 활용
+
+### assert 제거
+
+Java에서 직접적으로 `assert`를 지울 수는 없지만 조건부 컴파일을 활용해서 지울 수 있다.
+
+```java
+static final boolean asserts = ...; // false로 하면 assertions 제거 
+
+if (asserts) 
+   assert ...;
+```
+
+`asserts`가 `false`면 컴파일 후 클래스 파일에서 `assert`가 제거되어 파일 크기가 줄어든다.
+
+다만, 리소스가 매우 제약된 임베디드 또는 모바일 환경이나 클래스 로딩 시간이 중요한 경우가 아니라면 유의미한 성능 향상을 기대하긴 어렵다.
+
+### assert 요구
+
+프로그래머가 원한다면 `assert`를 활성화하도록 요구할 수 있다.
+`static` 초기화 블럭에서 `assert`가 비활성화된 경우 `exception`을 발생시킬 수 있다.
+
+```java
+static {
+   boolean assertsEnabled = false;
+   assert assertsEnabled = true;    // 의도적인 side effect
+   if (!assertsEnabled)
+     throw new RuntimeException("Asserts must be enabled!!!");
+}
+```
+
+`assert`가 활성화되었다면 `assertsEnabled`가 `assert`문에서 `true`로 변경되어 이후 조건문에 걸려 `exception`을 발생시킨다.
